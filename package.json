@@ -6,7 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "build:ghpages": "ng build --base-href \"/Portafolio-Angular/\"",
-    "deploy": "pnpm build:ghpages && npx angular-cli-ghpages --dir=dist/mi-proyecto-angular --no-silent",
+    "deploy": "pnpm build:ghpages && npx angular-cli-ghpages --dir=dist/mi-proyecto-angular/browser --no-silent",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
