@@ -1,0 +1,29 @@
+<div class="carrusel-container">
+  <div class="carrusel-viewport">
+    <div class="carrusel-track" [style.transform]="'translateX(-' + activeIndex() * 100 + '%)'">
+      @for (captura of capturas(); track captura.url) {
+        <div class="carrusel-slide">
+          <img [src]="captura.url" [alt]="captura.descripcion" class="carrusel-img" loading="lazy" />
+          <p class="captura-desc">{{ captura.descripcion }}</p>
+        </div>
+      }
+    </div>
+
+    @if (total() > 1) {
+      <button class="carrusel-btn prev" (click)="prev()" aria-label="Anterior">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12 4L6 10L12 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="carrusel-btn next" (click)="next()" aria-label="Siguiente">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M8 4L14 10L8 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    }
+  </div>
+
+  @if (total() > 1) {
+    <div class="carrusel-dots">
+      @for (captura of capturas(); track captura.url; let i = $index) {
+        <button class="dot" [class.active]="i === activeIndex()" (click)="irA(i)" [attr.aria-label]="'Ir a imagen ' + (i + 1)"></button>
+      }
+    </div>
+  }
+</div>

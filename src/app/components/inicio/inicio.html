@@ -1,0 +1,46 @@
+<!-- HERO SECTION -->
+<section id="hero">
+  <h2>Leandro Pacsi</h2>
+  <p class="hero-subtitle">Desarrollador Backend</p>
+
+  <div class="hero-links">
+    <a href="{{ sobreMi().github }}" target="_blank">GitHub</a>
+    <a href="{{ sobreMi().linkedin }}" target="_blank">LinkedIn</a>
+    <a href="#proyectos">Ver Proyectos</a>
+  </div>
+</section>
+
+<!-- SOBRE MÍ SECTION -->
+<section id="sobre-mi">
+  <h3>Sobre mí</h3>
+  <div class="sobre-mi-content">
+    <p class="sobre-mi-desc">{{ sobreMi().descripcion }}</p>
+    <div class="tech-stack">
+      @for (tech of sobreMi().tecnologias; track tech) {
+        <span class="tech-tag">{{ tech }}</span>
+      }
+    </div>
+  </div>
+</section>
+
+<!-- PROYECTOS SECTION -->
+<section id="proyectos">
+  <h3>Mis Proyectos</h3>
+  <div class="proyectos-grid">
+    @for (proyecto of proyectos(); track proyecto.titulo) {
+      <app-proyecto-card [data]="proyecto"></app-proyecto-card>
+    }
+  </div>
+</section>
+
+<!-- CONTACTO SECTION -->
+<section id="contacto">
+  <h3>Contacto</h3>
+  <p>¿Quieres trabajar conmigo o conocer más de mi trabajo?</p>
+  <div class="contact-links">
+    <a href="mailto:{{ sobreMi().email }}">Email</a>
+    <a href="{{ sobreMi().linkedin }}" target="_blank">LinkedIn</a>
+    <a href="{{ sobreMi().github }}" target="_blank">GitHub</a>
+    <a href="{{ sobreMi().youtube }}" target="_blank">YouTube</a>
+  </div>
+</section>

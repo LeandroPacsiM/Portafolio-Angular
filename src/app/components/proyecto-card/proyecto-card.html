@@ -1,0 +1,22 @@
+<div class="proyecto-card">
+    <div class="card-header">
+      <h4>{{ data().titulo }}</h4>
+      @if (data().enDesarrollo) {
+        <span class="badge-dev">En desarrollo</span>
+      }
+    </div>
+    <p>{{ data().descripcion }}</p>
+
+    <div class="tags">
+        @for (tech of data().tecnologias; track tech) {
+        <span class="tag">{{ tech }}</span>
+        }
+    </div>
+
+    <div class="card-links">
+        @if (data().linkDemo) {
+        <a [routerLink]="['/proyecto', data().slug]" class="btn-demo">Ver Demo</a>
+        }
+        <a [href]="data().linkGithub" target="_blank" class="btn-github">Ver en GitHub</a>
+    </div>
+</div>
