@@ -62,3 +62,26 @@
   box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
   transform: translateY(-2px);
 }
+
+.visit-link {
+  margin-top: 2rem;
+}
+
+.btn-visitar {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0A0A0A;
+  background-color: #00D4FF;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btn-visitar:hover {
+  background-color: #00E5FF;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  transform: translateY(-2px);
+}

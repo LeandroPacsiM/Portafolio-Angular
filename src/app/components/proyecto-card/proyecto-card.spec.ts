@@ -20,7 +20,8 @@ describe('ProyectoCard', () => {
       descripcion: 'Test desc',
       slug: 'test',
       linkGithub: 'https://github.com/test',
-      tecnologias: ['Angular']
+      capturas: [],
+      tecnologias: [{ nombre: 'Angular', color: '#DD0031' }]
     });
     fixture.detectChanges();
     await fixture.whenStable();

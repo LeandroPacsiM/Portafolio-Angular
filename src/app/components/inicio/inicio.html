@@ -16,8 +16,8 @@
   <div class="sobre-mi-content">
     <p class="sobre-mi-desc">{{ sobreMi().descripcion }}</p>
     <div class="tech-stack">
-      @for (tech of sobreMi().tecnologias; track tech) {
-        <span class="tech-tag">{{ tech }}</span>
+      @for (tech of sobreMi().tecnologias; track tech.nombre) {
+        <span class="tech-tag" [style.--tag-color]="tech.color">{{ tech.nombre }}</span>
       }
     </div>
   </div>

@@ -8,14 +8,14 @@
     <p>{{ data().descripcion }}</p>
 
     <div class="tags">
-        @for (tech of data().tecnologias; track tech) {
-        <span class="tag">{{ tech }}</span>
+        @for (tech of data().tecnologias; track tech.nombre) {
+        <span class="tag" [style.--tag-color]="tech.color">{{ tech.nombre }}</span>
         }
     </div>
 
     <div class="card-links">
         @if (data().linkDemo) {
-        <a [routerLink]="['/proyecto', data().slug]" class="btn-demo">Ver Demo</a>
+        <a [routerLink]="['/proyecto', data().slug]" class="btn-demo">Ver más</a>
         }
         <a [href]="data().linkGithub" target="_blank" class="btn-github">Ver en GitHub</a>
     </div>

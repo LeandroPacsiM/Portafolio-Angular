@@ -17,8 +17,18 @@ export class ProyectoService {
       descripcion: 'Plataforma web de reservas para expediciones turísticas que permite a los usuarios explorar viajes, visualizar itinerarios y elegir fechas disponibles. Resuelve problemas comunes en la gestión de turismo como la falta de control de cupos y la sobreventa',
       slug: 'plataforma-expediciones',
       linkGithub: 'https://github.com/LeandroPacsiM/Herramientas-Seccion-Grupo-06-API/tree/feature/leandro-pacsi',
-      linkDemo: 'https://ejemplo-plataforma.com',
-      tecnologias: ['SpringBoot', 'Java', 'SpringSecurity', 'React', 'MySQL'],
+      linkDemo: 'https://herramientas-seccion-grupo-06.vercel.app/',
+      tecnologias: [
+        { nombre: 'Spring Boot', color: '#6DB33F' },
+        { nombre: 'Spring Security', color: '#6DB33F' },
+        { nombre: 'React', color: '#61DBFB' },
+        { nombre: 'PostgreSQL', color: '#336791' },
+        { nombre: 'Supabase', color: '#3ECF8E' },
+        { nombre: 'Stripe', color: '#635BFF' },
+        { nombre: 'Render', color: '#46E3B7' },
+        { nombre: 'Vercel', color: '#AAAAAA' },
+        { nombre: 'CI/CD', color: '#22C55E' }
+      ],
       capturas: [
         { url: this.img('/screenshots/PaginaPrincipal.png'), descripcion: 'Página principal con hero y navegación del sistema' },
         { url: this.img('/screenshots/IniciarSesion.png'), descripcion: 'Formulario de inicio de sesión con autenticación de usuarios' },
@@ -36,7 +46,13 @@ export class ProyectoService {
       descripcion: 'API REST segura para gestión de inventario y facturación. Autenticación dual (tradicional con BCrypt + OAuth2 con Google) y control de acceso por roles.',
       slug: 'sistema-ventas',
       linkGithub: 'https://github.com/LeandroPacsiM/Sistema-de-Ventas',
-      tecnologias: ['Java', 'OAuth2', 'PostgreSQL', 'Spring Boot', 'Spring Security'],
+      tecnologias: [
+        { nombre: 'Java', color: '#ED8B00' },
+        { nombre: 'OAuth2', color: '#EB5424' },
+        { nombre: 'PostgreSQL', color: '#336791' },
+        { nombre: 'Spring Boot', color: '#6DB33F' },
+        { nombre: 'Spring Security', color: '#6DB33F' }
+      ],
       capturas: [
         { url: this.img('/screenshots/Imagen1.png'), descripcion: 'Pantalla principal de la plataforma con el listado de expediciones disponibles' },
         { url: this.img('/screenshots/Imagen2.png'), descripcion: 'Vista del dashboard de administración con métricas y reservas activas' },

@@ -6,13 +6,18 @@ export interface Captura {
   descripcion: string;
 }
 
+export interface TechTag {
+  nombre: string;
+  color: string;
+}
+
 export interface Proyecto {
   titulo: string;
   descripcion: string;
   slug: string;
   linkGithub: string;
   linkDemo?: string;
-  tecnologias: string[];
+  tecnologias: TechTag[];
   capturas: Captura[];
   enDesarrollo?: boolean;
 }

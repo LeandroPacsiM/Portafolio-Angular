@@ -7,6 +7,12 @@
       @if (tieneCapturas()) {
         <app-carrusel-capturas [capturas]="proyecto()!.capturas" />
       }
+
+      @if (proyecto()?.linkDemo) {
+        <div class="visit-link">
+          <a [href]="proyecto()!.linkDemo" target="_blank" class="btn-visitar" rel="noopener noreferrer">Visitar proyecto →</a>
+        </div>
+      }
     } @else {
       <h1>Proyecto no encontrado</h1>
       <p>El proyecto que buscas no existe o ha sido eliminado.</p>
