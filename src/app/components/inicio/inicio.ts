@@ -17,7 +17,6 @@ export class Inicio {
     github: 'https://github.com/LeandroPacsiM',
     linkedin: 'https://www.linkedin.com/in/leandropacsi27/',
     email: 'leandropacsi27@gmail.com',
-    youtube: 'https://youtube.com/@leandropacsi7703'
   });
 
   protected readonly proyectos;

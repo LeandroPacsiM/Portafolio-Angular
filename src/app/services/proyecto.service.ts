@@ -28,8 +28,7 @@ export class ProyectoService {
         { url: this.img('/screenshots/DashboardAdmin.png'), descripcion: 'Dashboard de administración con métricas del sistema' },
         { url: this.img('/screenshots/DetallesDeExpedicionYCompraDeExpedicion.png'), descripcion: 'Detalle de expedición y flujo completo de compra' },
         { url: this.img('/screenshots/MisReservas.png'), descripcion: 'Panel de reservas del usuario con estado de cada una' }
-      ],
-      videoUrl: 'https://www.youtube.com/embed/TKOtr4qznbA?si=XiMoMxkdwTvVuE8k'
+      ]
     },
     {
       enDesarrollo: true,
@@ -42,8 +41,7 @@ export class ProyectoService {
         { url: this.img('/screenshots/Imagen1.png'), descripcion: 'Pantalla principal de la plataforma con el listado de expediciones disponibles' },
         { url: this.img('/screenshots/Imagen2.png'), descripcion: 'Vista del dashboard de administración con métricas y reservas activas' },
         { url: this.img('/screenshots/Imagen3.png'), descripcion: 'Detalle del código fuente mostrando la arquitectura del backen y los controladores REST' }
-      ],
-      videoUrl: 'https://www.youtube.com/embed/TKOtr4qznbA?si=XiMoMxkdwTvVuE8k'
+      ]
     }
   ]);
 

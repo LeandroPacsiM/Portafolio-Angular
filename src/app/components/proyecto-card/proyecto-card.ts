@@ -14,7 +14,6 @@ export interface Proyecto {
   linkDemo?: string;
   tecnologias: string[];
   capturas: Captura[];
-  videoUrl?: string;
   enDesarrollo?: boolean;
 }
 

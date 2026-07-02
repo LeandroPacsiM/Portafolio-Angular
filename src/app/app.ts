@@ -30,6 +30,5 @@ export class App {
     nombre: 'Leandro Pacsi',
     github: 'https://github.com/LeandroPacsiM',
     linkedin: 'https://www.linkedin.com/in/leandropacsi27/',
-    youtube: 'https://youtube.com/@leandropacsi7703'
   });
 }
